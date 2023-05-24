@@ -220,6 +220,54 @@
     text-align: center;
 }
 
+.qualidade{
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item{
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+
+.qualidade-item h2{
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+
+}
+
+.qualidade-item h2::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before{   /* O 3n (significa que vai pular de 3 em 3) e o + 1 quer dizer que quer essa cor a partir do primeiro item*/
+    background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {  /*essa cor a partir do segundo item*/
+    background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {  /*essa cor a partir do terceiro item*/
+    background: #66d9eb;
+}
+
+.qualidade-item p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+
+
+
 @media (max-width: 800px){
     .preco{
     padding-left: 10px;
